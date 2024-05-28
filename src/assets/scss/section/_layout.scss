@@ -10,11 +10,12 @@
 
 #main {
     max-width: 2000px;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     margin: 0 auto;
     padding-left: 260px;
     background-color: #111;
     margin-top: 80px;
+    position: relative;
 }
 
 #footer {

@@ -1,3 +1,4 @@
+// 비디오 페이지
 .video__inner {
     display: grid;
     grid-template-columns: repeat(4, 24%);
@@ -19,18 +20,6 @@
     }
 
     .video {
-        a {
-            img {
-                padding-bottom: 10px;
-            }
-        }
-    }
-}
-
-.video__inner.search {
-    padding: 40px;
-
-    .video {
         .video__thumb {
             a {
                 display: block;
@@ -46,13 +35,12 @@
             padding: 1rem;
 
             .title {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
+                // @include line-two;
                 min-height: 48px;
-                
+
+                @media (max-width: 800px) {
+                    min-height: 40px;
+                }
             }
 
             .author {
@@ -85,8 +73,6 @@
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
-
-            &:hover {}
         }
     }
 }
