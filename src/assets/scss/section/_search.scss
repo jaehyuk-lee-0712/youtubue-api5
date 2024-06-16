@@ -1,43 +1,41 @@
 .search__inner {
-    position: relative;
-    width: 100%;
-    height: 80px;
-    padding: 17px 40px;
-    border-bottom: 5px solid var(--black200);
-    background-color: #222222b2;
-    backdrop-filter: blur(10px);
+  position: fixed; /* 상단 고정 위치 설정 */
+  width: calc(100% - 260px);
+  height: 80px;
+  padding: 17px 40px;
+  border-bottom: 1px solid var(--black100);
+  background-color: #171717cd;
+  backdrop-filter: blur(10px);
+  z-index: 1000; /* 다른 요소 위에 보이도록 z-index 설정 */
+  top: 0; /* 상단에 위치 */
+  left: 260px; /* 좌측에 위치 */
 
-    label {
-        width: 24px;
-        height: 24px;
-        background-image: url(../../img/icon/search.svg);
-        position: absolute;
-        left: 50px;
-        top: 28px;
-        background-size: cover;
-    }
-    input {
-        background-color: var(--black100);
-        border: 1px solid var(--black200);
-        width: 100%;
-        padding: 14px 45px;
-        color: #7e7a7a;
-    }
+  label {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../img/icon/search.svg);
+    position: absolute;
+    left: 50px;
+    top: 28px;
+    background-size: cover;
+  }
+
+  input {
+    background-color: var(--black300);
+    border: 1px solid var(--black200);
+    width: 100%;
+    padding: 14px 45px;
+    color: var(--white);
+    border-radius: 5px;
+  }
 }
 
-@media (max-width : 960px) { 
-    .search__inner {
-        padding: 17px 20px 17px 220px;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
+@media (max-width: 960px) {
+  .search__inner {
+    padding: 17px 20px 17px 20px; /* 패딩 수정 */
 
-        label {
-            left: 234px;
-        }
+    label {
+      left: 30px; /* 모바일 화면에서 라벨 위치 조정 */
     }
-
-    
+  }
 }

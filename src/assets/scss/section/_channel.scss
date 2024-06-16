@@ -5,6 +5,8 @@
     padding-top: 100px;
     position: relative;
     background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
      .circle {
         width: 200px;
         height: 200px;
@@ -17,4 +19,14 @@
         transform: translate(-50%);
         z-index: 10000;
      }
+}
+
+
+.channel__info {
+   margin-top: 100px;
+   text-align: center;
+   .title {
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+   }
 }

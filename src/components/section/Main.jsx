@@ -20,7 +20,6 @@ const Main = (props) => {
         <section id='main' role='main'>
           {props.children}
         </section>
-      
    </HelmetProvider>
   )
 }
