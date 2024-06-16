@@ -69,3 +69,12 @@
     src: url(../../fonts/nanumSquareNeo-Black.woff) format("woff") , 
     url(../../fonts/nanumSquareNeo-Black.woff2) format("woff2");
 }
+
+@font-face {
+    font-family: 'Ubuntu Condensed", sans-serif';
+    font-style: normal;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ubuntu+Condensed&display=swap');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
